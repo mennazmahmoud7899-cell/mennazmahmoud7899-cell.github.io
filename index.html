@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvaya | Quiet Luxury Apparel</title>
+
+    <style>
+        :root {
+            --creme-beige: #F5EBDC; /* البيج الكريمي */
+            --dusty-rose: #D2AAB4; /* الروز الترابي */
+            --font-color: #333333; 
+        }
+
+        body {
+            background-color: var(--creme-beige); 
+            color: var(--font-color);
+            font-family: 'Times New Roman', Times, serif; /* خط كلاسيكي للرقي */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px 20px;
+            border-bottom: 1px solid #E0D0C0; /* خط فاصل ناعم */
+        }
+        
+        .logo img {
+            width: 180px; /* حجم اللوجو */
+            height: auto;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: var(--font-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--dusty-rose);
+        }
+
+        /* تنسيق المنتجات */
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 60px 20px;
+            gap: 40px; /* مسافة كبيرة بين المنتجات */
+        }
+
+        .product-card {
+            width: 320px;
+            text-align: center;
+            background-color: white;
+            padding-bottom: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* ظل خفيف وفخم */
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .product-card h2 {
+            font-size: 1.6em;
+            color: var(--font-color);
+            margin: 15px 0 5px;
+        }
+
+        .product-card .price {
+            font-size: 1.8em;
+            color: var(--dusty-rose); 
+            font-weight: bold;
+            margin: 10px 0 20px;
+        }
+
+        .add-to-cart-btn {
+            background-color: var(--dusty-rose); 
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #B49B85; /* ذهبي مطفي */
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="logo-elvaya-rose.png" alt="Elvaya Luxury Apparel Logo">
+        </div>
+        
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#">المجموعة</a>
+            <a href="#">من نحن</a>
+            <a href="#">السلة (0)</a>
+        </nav>
+    </header>
+    
+    <main class="product-grid">
+        
+        <div class="product-card">
+            <img src="jacket-model-1.jpg" alt="جاكيت Elvaya الروز" title="جاكيت Elvaya الروز">
+            <div>
+                <h2>The Rose Tailor Blazer</h2>
+                <p style="color: #666; font-size: 0.95em;">جاكيت بتصميم مستوحى من الهندسة المعمارية الحديثة، بخياطة إيطالية دقيقة.</p>
+                <p class="price">3,500 EGP</p>
+                <button class="add-to-cart-btn">أضف إلى السلة</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="dress-model-2.jpg" alt="فستان Elvaya البيج" title="فستان Elvaya البيج">
+            <div>
+                <h2>The Creme Flow Dress</h2>
+                <p style="color: #666; font-size: 0.95em;">فستان طويل بتدفق هادئ، يجسد الأناقة السامية والراحة.</p>
+                <p class="price">2,800 EGP</p>
+                <button class="add-to-cart-btn">أضف إلى السلة</button>
+            </div>
+        </div>
+        
+    </main>
+    
+</body>
+</html>
